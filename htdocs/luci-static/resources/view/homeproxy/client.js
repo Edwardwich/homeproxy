@@ -217,7 +217,7 @@ return view.extend({
 			return true;
 		}
 
-		o = s.taboption('routing', form.Value, 'china_dns_server', _('China DNS server'),
+		o = s.taboption('routing', form.Value, 'china_dns_server', _('IRAN DNS server'),
 			_('The dns server for resolving China domains. Support UDP, TCP, DoH, DoQ, DoT.'));
 		o.value('wan', _('WAN DNS (read from interface)'));
 		o.value('217.218.127.127', _('Mokhaberat Public DNS (217.218.127.127)'));
@@ -255,8 +255,8 @@ return view.extend({
 
 		o = s.taboption('routing', form.ListValue, 'routing_mode', _('Routing mode'));
 		o.value('gfwlist', _('GFWList'));
-		o.value('bypass_mainland_china', _('Bypass mainland China'));
-		o.value('proxy_mainland_china', _('Only proxy mainland China'));
+		o.value('bypass_mainland_china', _('Bypass mainland IRAN'));
+		o.value('proxy_mainland_china', _('Only proxy mainland IRAN'));
 		o.value('custom', _('Custom routing'));
 		o.value('global', _('Global'));
 		o.default = 'bypass_mainland_china';
