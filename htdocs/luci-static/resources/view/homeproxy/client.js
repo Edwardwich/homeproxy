@@ -226,7 +226,7 @@ return view.extend({
 		o.value('10.4.4.4', _('HamrahAval Public DNS (10.4.4.4)'));
 		o.value('178.22.122.100', _('shecanfree Public DNS (178.22.122.100)'));
 		o.value('178.22.122.101', _('shecanproo Public DNS (178.22.122.101)'));
-		o.depends('routing_mode', 'bypass_mainland_china');
+		o.depends('routing_mode', 'bypass_mainland_Iran');
 		o.default = '217.218.127.127';
 		o.rmempty = false;
 		o.validate = function(section_id, value) {
@@ -255,11 +255,11 @@ return view.extend({
 
 		o = s.taboption('routing', form.ListValue, 'routing_mode', _('Routing mode'));
 		o.value('gfwlist', _('GFWList'));
-		o.value('bypass_mainland_china', _('Bypass mainland China'));
-		o.value('proxy_mainland_china', _('Only proxy mainland China'));
+		o.value('bypass_mainland_Iran', _('Bypass mainland Iran'));
+		o.value('proxy_mainland_Iran', _('Only proxy mainland Iran'));
 		o.value('custom', _('Custom routing'));
 		o.value('global', _('Global'));
-		o.default = 'bypass_mainland_china';
+		o.default = 'bypass_mainland_Iran';
 		o.rmempty = false;
 		o.onchange = function(ev, section_id, value) {
 			if (section_id && value === 'custom')
